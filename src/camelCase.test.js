@@ -25,6 +25,7 @@ describe('camelCase', () => {
     expect(camelCase("hacktoberfest rocks")).toEqual("HacktoberfestRocks");
     expect(camelCase("this is a large test")).toEqual("ThisIsALargeTest");
 	expect(camelCase("one")).toThrowError("Can't convert single word to camel case");
+    expect(camelCase("yo yo")).toEqual("Yo Yo");
   });
 });
 
